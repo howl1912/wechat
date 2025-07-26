@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>howl1213 - 名字展示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #fff;
+        }
+        
+        .container {
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        header {
+            margin-bottom: 50px;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            letter-spacing: 3px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .name-display {
+            background: #222; /* 简单深色背景 */
+            border-radius: 20px;
+            padding: 50px 30px;
+            margin: 40px 0;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .name {
+            font-size: 6rem;
+            font-weight: 800;
+            color: #fff; /* 直接白色字体，清晰简洁 */
+            background: none;
+            -webkit-background-clip: initial;
+            background-clip: initial;
+            -webkit-text-fill-color: initial;
+            text-shadow: none;
+            margin: 20px 0;
+            letter-spacing: 5px;
+            animation: none; /* 去除闪烁等特效 */
+        }
+        
+        .meaning {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 30px auto 0;
+            padding: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            width: 250px;
+            transition: transform 0.3s, background 0.3s;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            color: #f8f9fa;
+        }
+        
+        .feature-card p {
+            font-size: 1rem;
+            opacity: 0.85;
+        }
+        
+        .signature {
+            margin: 50px auto;
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: #f8f9fa;
+            max-width: 400px;
+            padding: 20px;
+            border-top: 2px solid rgba(255, 255, 255, 0.3);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 1rem;
+            opacity: 0.8;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .name { font-size: 4rem; }
+            .features { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>我的微信号是</h1>
+            <p class="subtitle">每个名字都有其独特的意义和魅力，下面为您展示我的微信号</p>
+        </header>
+        
+        <div class="name-display">
+            <h2>我的微信号</h2>
+            <div class="name">howl1912</div>
+            <p class="meaning">
+                "howl"代表野性的呼唤与自由精神，"1912"象征19年的寒冷与12号的神秘，<br>
+                组合起来展现了一个充满活力、独特个性的数字身份。
+            </p>
+        </div>
+        
+        <div class="features">
+            <div class="feature-card">
+                <h3>独特性</h3>
+                <p>howl1912 是一个独特的组合，融合了英文单词与数字，在互联网上具有很高的辨识度。</p>
+            </div>
+            <div class="feature-card">
+                <h3>易记性</h3>
+                <p>简洁的字母组合加上有规律的数字，使 howl1912 既容易记忆又便于输入。</p>
+            </div>
+            <div class="feature-card">
+                <h3>数字身份</h3>
+                <p>在数字时代，howl1912 不仅是一个名字，更代表着一个独特的在线身份和个性表达。</p>
+            </div>
+        </div>
+        
+        <div class="signature">
+            howl1912
+        </div>
+        
+        <footer>
+            <p>© 2023 howl1912 名字展示页面 | 数字身份的艺术</p>
+        </footer>
+    </div>
+</body>
+</html>
